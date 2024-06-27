@@ -1,17 +1,18 @@
 # Trimble2Kusto 
 
 ## Purpose 
-Ingest real-time data from Trimble via SignalR/WebSocket into Kusto aka. [Azure Data Explorer](https://aka.ms/adx.pp), [Synapse Data Explorer](https://learn.microsoft.com/azure/synapse-analytics/data-explorer/data-explorer-overview) dedicated-pool, and Microsoft Fabric [KQL Database](https://learn.microsoft.com/fabric/real-time-analytics/create-database) in [Real-Time Analytics](http://aka.ms/FabricRTA). 
+Ingest real-time data from Trimble via SignalR/WebSocket into Kusto aka. [Azure Data Explorer](https://aka.ms/adx.pp), [Synapse Data Explorer](https://learn.microsoft.com/azure/synapse-analytics/data-explorer/data-explorer-overview) dedicated-pool, and Microsoft Fabric [KQL Database](https://learn.microsoft.com/fabric/real-time-analytics/create-database) in [Real-Time Intelligence](http://aka.ms/rti-blog). 
 
 ## Description
 This repo contains sample DotNet Console App [program](notificationsvc/Program.cs) in C# that uses WebSocket, SignalR, Kusto SDK. The program will connect to the [Trimble Notification Service](https://developer.trimblemaps.com/restful-apis/trip-management/notifications-service), provided a valid api-key, via WebSocket and streams messages (service-telemetry, GPS, ETA, OoC, Weather, etc.) into Kusto using DotNet SDK client libraries for real-time analytics. 
 
 The sample assets in this repo are not production solutions. They are samples for proof-of-concept or minimal-viable-product at best. The pipelines establish a data workflow for analytics end2end, including dashboard visualizations. 
 
-If you're wondering, what is Kusto, check out these 2 videos:
-1. [ADX at a glance](https://youtu.be/9rwbsZDD9fw?si=6iIJAPIBVMuvPYIp)
-2. [How customers are using it?](https://youtu.be/lOO0PMX3qIk?si=01WXCkWITub0l8RH)
-
+If you're wondering, what is Kusto, check out these videos:
+1. [The mechanics of Real-Time Intelligence in Microsoft Fabric](<https://youtube.com/watch?v=4h6Wnc294gA>)
+2. [Real-Time Intelligence in Microsoft Fabric](<https://youtube.com/watch?v=ugb_w3BTZGE>)
+3. [ADX at a glance](https://youtu.be/9rwbsZDD9fw?si=6iIJAPIBVMuvPYIp)
+4. [How customers are using it?](https://youtu.be/lOO0PMX3qIk?si=01WXCkWITub0l8RH)
 
 ### Summary of Console App
 Example of using WebSocket, Trimble Notification Service, Kusto SDK, and SignalR to stream messages into Kusto.

@@ -49,7 +49,8 @@ This sample [Program.cs](notificationsvc/Program.cs) assumes:
 ### Running [Program.cs](notificationsvc/Program.cs)
 1. Add required DotNet packages. 
 2. Enter the required parameters, then build the program.
-3. Deploy the program as an [Azure Function](https://azure.microsoft.com/products/function) when ready.
+3. Deploy the program as an [Azure Function](https://azure.microsoft.com/products/functions) when ready.
+4. Sample Azure Function - [SignalRToKusto](https://github.com/hfleitas/SignalRToKusto)
 
 
 ## Conceptual Pipelines

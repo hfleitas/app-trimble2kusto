@@ -29,7 +29,7 @@ string table = "your-kql-table";
 
 // kusto client settings
 var clusterKcsb = new KustoConnectionStringBuilder(clusterUri)
-    .WithAadUserPromptAuthentication();
+    .WithAadUserPromptAuthentication(); // .WithAadApplicationKeyAuthentication(applicationClientId: "<your-client-id>", applicationKey: "<your-secret>", authority: "your-tenant-id");
 var ingestClient = KustoIngestFactory
     .CreateStreamingIngestClient(clusterKcsb);
 var ingestProps = new KustoIngestionProperties(database, table) {
